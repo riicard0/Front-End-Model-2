@@ -12,9 +12,14 @@
     --color-primary1: #000000;
     --color-primary2: -webkit-linear-gradient(to right, #434343, #000000);
     --color-primary3: linear-gradient(to right, #434343, #000000);
-    --color-secondary1: #1f4037;;
-    --color-secondary2: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    --color-secondary3: linear-gradient(to right, #99f2c8, #1f4037);
+    
+    --color-secondary1: #232526;
+    --color-secondary2: -webkit-linear-gradient(to right, #414345, #232526);
+    --color-secondary3: linear-gradient(to right, #000000, #232526);
+
+    --color-third1: #002b3a;
+    --color-third2: -webkit-linear-gradient(to right, #ffffff, #002b3a);
+    --color-third3: linear-gradient(to right, #bbaefc, #000000);
 }
 
 /* HEADER */
@@ -24,7 +29,7 @@ html{
 }
 
 .escopo-site{
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -32,13 +37,13 @@ html{
 .faixaCorPrimaria{
     background: var(--color-primary1);
     background: var(--color-primary2);
-    background: var(--color-primary3);    
+    background: var(--color-primary3);
 }
 
 .sessao-header{
     height: 6rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -51,28 +56,89 @@ html{
 
 .sessao-header div a{
     font-size: 2.5rem;
-    margin: 0 2rem;
+    margin: 0 3rem;
     color: #fff;
+}
+
+.sessao-header div a:hover{
+    text-shadow: -0.05rem -0.05rem 0.7rem rgba(255, 255, 255, 1);
+    transition: 1s;
 }
 
 /* MENU */
 
 .faixaCorSecundaria{
-    background: var(--color-secondary1);
-    background: var(--color-secondary2);
-    background: var(--color-secondary3);
+    background: var(--color-third1);
+    background: var(--color-third2);
+    background: var(--color-third3);
 }
 
 .sessao-menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 10rem;
 }
 
 .sessao-menu h1{
-    background: url(../IMG/logo.png) no-repeat;
-    width: 10rem;
-    height: 10rem;
+    background: url(../IMG/logo.png) no-repeat center;
+    background-size: cover;
+    width: 8rem;
+    height: 8rem;
     text-indent: -9999px;
 }
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    margin: 0 1rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-family: var(--font-action);
+    font-size: 1.3rem;
+    opacity: .8;
+}
+
+.menu ul li a:hover{
+    opacity: 1;
+    color: #000;
+    text-shadow: .1rem .1rem .9rem rgba(0, 0, 0, .3);
+    transition: 1s;
+}
+
+/* BANNER */
+
+.sessao-banner{
+    overflow: hidden;
+}
+
+.sessao-banner img{
+    width: 100%;
+    max-height: 52rem;
+    object-fit: cover;
+    animation: zoom 12s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+        opacity:0.9
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
