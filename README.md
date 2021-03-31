@@ -4,7 +4,7 @@ Segundo modelo de site
 
 ## Tarefas
 
-O controle das tarefas desse projeto está sendo realizado no GitHub e no arquivo "Front-End Model 2.txt"
+O controle das tarefas desse projeto está sendo realizado no GitHub!
 
 ## Ícones
 
