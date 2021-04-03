@@ -144,6 +144,7 @@ body{
 .sessao-banner .slick-next:hover
 {
     opacity: .50;
+    transition: 1s;
 }
 
 .sessao-banner .slick-prev
@@ -177,9 +178,10 @@ body{
 
 .sessao-banner .slick-dots li button:hover{
     opacity: .45;
+    transition: 1s;
 }
 
-.slick-dots li.slick-active button:before
+.sessao-banner .slick-dots li.slick-active button:before
 {
     opacity: 1;
     color: #2b00ff;
@@ -206,8 +208,8 @@ body{
 
 .sessao-sobre div p{
     width: 57rem;
-    font-size: 1.3rem;
-    font-family: var(--font-third);
+    font-size: 1.6rem;
+    font-family: var(--font-secondary);
     font-weight: bold;
     color: #fff;
     background: var(--color-third1);
@@ -215,7 +217,7 @@ body{
     background: var(--color-third3);
     border: 1rem solid #303030;
     border-radius: 0 2rem 0 1rem;
-    padding: 0 2rem;
+    padding: 0 3rem;
     margin-right: 1rem;
     display: flex;
     justify-content: center;
@@ -232,3 +234,48 @@ body{
 
 /* GALERIA */
 
+.sessao-galeria{
+    background: var(--color-primary1);
+    background: var(--color-primary2);
+    background: var(--color-primary3);
+    padding: 3rem 0;
+}
+
+.sessao-galeria img{
+    margin: 0 2rem;
+    width: 21.5rem;
+    height: 21.5rem;
+    border: .3rem double rgb(0, 132, 255);
+    border-radius: 2rem;
+}
+
+/* GALERIA (SLICK JS) */
+
+.sessao-galeria .slick-prev:before,
+.sessao-galeria .slick-next:before
+{
+    font-size: 4rem;
+    opacity: 1;
+    color: #fff;
+}
+
+.sessao-galeria .slick-prev:hover,
+.sessao-galeria .slick-next:hover
+{
+    opacity: .50;
+    transition: 1s;
+}
+
+.sessao-galeria .slick-prev
+{
+    left: 4.7rem;
+    z-index: 99;
+}
+
+.sessao-galeria .slick-next
+{
+    right: 8rem;
+    z-index: 99;
+}
+
+/*  */
