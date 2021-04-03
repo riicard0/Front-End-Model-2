@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Baloo+Da+2:wght@400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 /* VARIÁVEIS */
@@ -9,7 +7,6 @@
     --font-action: "Averia Serif Libre", serif;
     --font-primary: "Baloo Da 2", serif;
     --font-secondary: "Source Sans Pro", serif;
-    --font-third: 'Merriweather', serif;
     
     --color-primary1: #000000;
     --color-primary2: -webkit-linear-gradient(to right, #000000, #434343, #000000);
@@ -22,9 +19,13 @@
     --color-third1: #232526;
     --color-third2: -webkit-linear-gradient(to right, #000000, #232526);
     --color-third3: linear-gradient(to right, #000000, #232526);
+
+    --color-fourth1: #093028;
+    --color-fourth2: -webkit-linear-gradient(to right, #093028, #237a57);
+    --color-fourth3: linear-gradient(to right, #093028, #237a57);
 }
 
-/* HEADER */
+/* GERAL */
 
 html{
     font-size: 10px;
@@ -32,8 +33,10 @@ html{
 }
 
 body{
-    background: url(../IMG/fundo.png);
+    background: url(../IMG/Background/fundo.png);
 }
+
+/* HEADER */
 
 .escopo-site{
     max-width: 100rem;
@@ -86,7 +89,7 @@ body{
 }
 
 .sessao-menu h1{
-    background: url(../IMG/logo.png) no-repeat center;
+    background: url(../IMG/Logo/logo.png) no-repeat center;
     background-size: cover;
     width: 8rem;
     height: 8rem;
@@ -239,6 +242,7 @@ body{
     background: var(--color-primary2);
     background: var(--color-primary3);
     padding: 3rem 0;
+    margin-bottom: 4rem;
 }
 
 .sessao-galeria img{
@@ -278,4 +282,60 @@ body{
     z-index: 99;
 }
 
-/*  */
+/* SERVIÇOS */
+
+.faixaCorTerciaria{
+    background: var(--color-fourth1);
+    background: var(--color-fourth2);
+    background: var(--color-fourth3);
+}
+
+.sessao-servicos{
+    margin: 4rem auto;
+}
+
+.sessao-servicos h2{
+    color: #fff;
+    font-size: 3rem;
+    font-family: var(--font-action);
+    font-weight: bold;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-servicos hr{
+    margin: 0;
+    border: .1rem solid #000;
+}
+
+.servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicos div{
+    background: #fff;
+    padding: 1.5rem;
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+.servicos div img{
+    width: 20.5rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.servicos div p{
+    width: 20.5rem;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+/* VÍDEO */
+
