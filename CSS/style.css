@@ -36,6 +36,10 @@ body{
     background: url(../IMG/Background/fundo.png);
 }
 
+.secondary-container{
+    position: relative;
+}
+
 /* HEADER */
 
 .escopo-site{
@@ -45,9 +49,7 @@ body{
 }
 
 .faixaCorPrimaria{
-    background: var(--color-primary1);
-    background: var(--color-primary2);
-    background: var(--color-primary3);
+    background: var(--color-primary3, --color-primary2, --color-primary1);
 }
 
 .sessao-header{
@@ -74,12 +76,14 @@ body{
     transition: 1s;
 }
 
+.sessao-header div a:not( :hover ){
+    transition: 1s;
+}
+
 /* MENU */
 
 .faixaCorSecundaria{
-    background: var(--color-secondary1);
-    background: var(--color-secondary2);
-    background: var(--color-secondary3);
+    background: var(--color-secondary3, --color-secondary2, --color-secondary1);
 }
 
 .sessao-menu{
@@ -120,8 +124,12 @@ body{
 }
 
 .menu ul li a:hover{
-    background: rgb(122, 122, 122);
+    background: rgb(0, 0, 0);
     color: #fff;
+    transition: 1s;
+}
+
+.menu ul li a:not( :hover ){
     transition: 1s;
 }
 
@@ -147,6 +155,12 @@ body{
 .sessao-banner .slick-next:hover
 {
     opacity: .50;
+    transition: 1s;
+}
+
+.sessao-banner .slick-prev:not( :hover ),
+.sessao-banner .slick-next:not( :hover )
+{
     transition: 1s;
 }
 
@@ -184,6 +198,10 @@ body{
     transition: 1s;
 }
 
+.sessao-banner .slick-dots li button:not( :hover ){
+    transition: 1s;
+}
+
 .sessao-banner .slick-dots li.slick-active button:before
 {
     opacity: 1;
@@ -215,9 +233,7 @@ body{
     font-family: var(--font-secondary);
     font-weight: bold;
     color: #fff;
-    background: var(--color-third1);
-    background: var(--color-third2);
-    background: var(--color-third3);
+    background: var(--color-third3, --color-third2, --color-third1);
     border: 1rem solid #303030;
     border-radius: 0 2rem 0 1rem;
     padding: 0 3rem;
@@ -238,9 +254,7 @@ body{
 /* GALERIA */
 
 .sessao-galeria{
-    background: var(--color-primary1);
-    background: var(--color-primary2);
-    background: var(--color-primary3);
+    background: var(--color-primary3, --color-primary2, --color-primary1);
     padding: 3rem 0;
     margin-bottom: 4rem;
 }
@@ -270,6 +284,12 @@ body{
     transition: 1s;
 }
 
+.sessao-galeria .slick-prev:not( :hover ),
+.sessao-galeria .slick-next:not( :hover )
+{
+    transition: 1s;
+}
+
 .sessao-galeria .slick-prev
 {
     left: 4.7rem;
@@ -285,9 +305,7 @@ body{
 /* SERVIÇOS */
 
 .faixaCorTerciaria{
-    background: var(--color-fourth1);
-    background: var(--color-fourth2);
-    background: var(--color-fourth3);
+    background: var(--color-fourth3, --color-fourth2, --color-fourth1);
 }
 
 .sessao-servicos{
@@ -318,8 +336,7 @@ body{
 .servicos div{
     background: #fff;
     padding: 1.5rem;
-    margin: 4rem 0 2rem 0;
-    text-align: center;
+    margin: 3rem 0 2rem 0;
     border-radius: .5rem;
 }
 
@@ -365,7 +382,7 @@ body{
 /* EQUIPE */
 
 .sessao-equipe{
-    margin: 4rem auto 5rem auto;
+    margin: 5rem auto 7rem auto;
 }
 
 .sessao-equipe h2{
@@ -422,4 +439,140 @@ body{
 }
 
 /* BLOG */
+
+.sessao-blog h2{
+    color: #fff;
+    font-size: 3rem;
+    font-family: var(--font-action);
+    font-weight: bold;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-blog hr{
+    margin: 0;
+    border: .1rem solid #000;
+}
+
+.blog{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.blog div{
+    background: #fff;
+    padding: 1.5rem;
+    margin: 3rem 2rem 2rem 0;
+    border-radius: .5rem;
+}
+
+.blog div img{
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.blog div p{
+    width: 25rem;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+/* RODAPÉ */
+
+.sessao-rodape{
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+}
+
+.sessao-rodape img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.sessao-rodape div a{
+    font-size: 2.5rem;
+    margin: 0 3rem;
+    color: #000;
+    opacity: .9;
+}
+
+.sessao-rodape div a:hover{
+    color: #fff;
+    text-shadow: -.02rem -.02rem 0.3rem rgba(255, 255, 255, 1);
+    opacity: 1;
+    transition: 1s;
+}
+
+.sessao-rodape div a:not( :hover ){
+    transition: 1s;
+}
+
+.sessao-rodape h2{
+    font-size: 1.8rem;
+    color: #000;
+    font-family: var(--font-action);
+    font-weight: bold;
+    margin: 2rem;
+}
+
+.sessao-rodape h3{
+    font-size: 1.8rem;
+    color: #000;
+    font-family: var(--font-action);
+    font-weight: bold;
+}
+
+.rodape{
+    padding: 1.5rem;
+}
+
+.rodape h2{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-align: center;
+}
+
+/* BACK HOME */
+
+#link-topo{
+    position: fixed;
+    color: #000;
+    background: #fff;
+    opacity: .7;
+    font-size: 2rem;
+    right: 3rem;
+    bottom: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#link-topo:hover{
+    opacity: 1;
+    transition: 1s;
+    box-shadow: -0.05rem -0.05rem 0.7rem rgba(255, 255, 255, 1);
+}
+
+#link-topo:not( :hover ){
+    transition: 1s;
+}
+
+@keyframes moveBackHome{
+    /* Quero fazer com que o botão Back Home vire 180º e fique posicionado no meio da página quando estiver na home, ao clicar desça a página, quando não estiver na home ele fique posicionado à direita apontando para cima, que ao clicar volte ao topo */
+    /* Acredito que vou ter que recomeçar fazendo primeiro o botão Down Page para depois virar Back Home */
+}
 

@@ -39,4 +39,3 @@ $('.sessao-galeria').slick({
   ]
 });
 
-//

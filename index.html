@@ -18,10 +18,12 @@
 
         <link rel="stylesheet" href="CSS/style.css">
     </head>
+
     <body>
         <div class="sessao-container">
+
             <!-- HEADER -->
-            <header class="faixaCorPrimaria">
+            <header class="faixaCorPrimaria" id="home">
                 <div class="escopo-site">
                     <div class="sessao-header">
                         <div>
@@ -42,7 +44,7 @@
                     <h1>Game Over Store</h1>
                     <nav class="menu">
                         <ul>
-                            <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                            <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                             <li class="menu-item"><a href="#sobre" class="menu-link">Sobre</a></li>
                             <li class="menu-item"><a href="#servicos" class="menu-link">Serviços</a></li>
                             <li class="menu-item"><a href="#blog" class="menu-link">Blog</a></li>
@@ -149,12 +151,52 @@
             </section>
 
             <!-- BLOG -->
+            <section class="faixaCorTerciaria sessao-blog" id="blog">
+               <div class="escopo-site">
+                    <h2>Blog</h2>
+                    <hr>
+                    <div class="blog">
+                        <div>
+                            <img src="IMG/Blog/bg1.jpg" alt="Blog Game Over Store">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem pariatur dicta quibusdam nulla magni. Animi, impedit vero. Commodi, quam itaque.</p>
+                        </div>
+                        <div>
+                            <img src="IMG/Blog/bg2.jpg" alt="Blog Game Over Store">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem pariatur dicta quibusdam nulla magni. Animi, impedit vero. Commodi, quam itaque.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RODAPÉ -->
+            <footer class="faixaCorSecundaria" id="contato">
+                <div class="escopo-site sessao-rodape">
+                    <img src="IMG/Logo/logo.png" alt="Logo Game Over Store">
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <h2>gameover.store@contato.com</h2>
+                    <h3>(11) 90000-0000</h3>
+                </div>
+                <div class="faixaCorPrimaria rodape">
+                    <h2>Todos os direitos reservados - TI - Senac São Miguel Paulista</h2>
+                </div>
+            </footer>
+
+            <!-- BACK HOME -->
+            <a href="#home" id="link-topo">
+                <i class="fas fa-arrow-up"></i>
+            </a>
             
         </div>
 
+        <!-- SCRIPT JS -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="JS/slick.min.js"></script>
 
         <script type="text/javascript" src="JS/animation.js"></script>
+
     </body>
 </html>
