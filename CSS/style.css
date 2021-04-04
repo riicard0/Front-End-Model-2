@@ -339,3 +339,87 @@ body{
 
 /* VÍDEO */
 
+.sessao-video{
+    padding: 3rem;
+}
+
+.sessao-video div{
+    background: url(../IMG/Vídeo/imgVideo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: .2rem solid #636363;
+}
+
+.sessao-video div img{
+    padding: 7rem 45rem;
+    z-index: 99;
+    filter: invert(35%);
+    width: 10rem;
+    height: 10rem;
+}
+
+/* EQUIPE */
+
+.sessao-equipe{
+    margin: 4rem auto 5rem auto;
+}
+
+.sessao-equipe h2{
+    color: #fff;
+    font-size: 3rem;
+    font-family: var(--font-action);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.sessao-equipe hr{
+    margin: 0;
+    border: .1rem solid rgb(77, 77, 77);
+}
+
+.equipe{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.equipe div{
+    margin: auto 2rem;
+}
+
+.equipe div img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10rem;
+}
+
+.equipe div h3{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: var(--font-action);
+    font-weight: bold;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipe div h4{
+    color: rgb(160, 160, 160);
+    font-size: 2rem;
+    font-family: var(--font-secondary);
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BLOG */
+
